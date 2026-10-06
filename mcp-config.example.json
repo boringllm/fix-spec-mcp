@@ -1,0 +1,9 @@
+{
+  "_comment": "Copy the 'fix-spec-search' block into your MCP client config (Claude Desktop: claude_desktop_config.json; Claude Code: .mcp.json at the repo root). Adjust the absolute path to server.py. On macOS/Linux use forward slashes. No docs path is needed — the corpus is bundled under docs/. To point it at a different corpus instead, add  \"env\": { \"FIX_SPEC_DOCS\": \"C:\\\\path\\\\to\\\\docs\" }.",
+  "mcpServers": {
+    "fix-spec-search": {
+      "command": "python",
+      "args": ["C:\\temp\\LLM\\fix\\fix-spec-mcp\\server.py"]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fix-spec-mcp"
+version = "1.0.0"
+description = "MCP server to search and verify against the FIX.Latest specification corpus (fix-spec-docs)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["mcp>=1.2"]
+
+[project.scripts]
+fix-spec-mcp = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
+packages = ["fixspec"]

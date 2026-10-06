@@ -1,0 +1,7 @@
+# fix-spec-mcp runtime dependencies.
+#
+# The search/index engine (the `fixspec/` package) is PURE Python standard library — no
+# third-party packages. The only dependency is the MCP server transport:
+mcp>=1.2
+
+# Python 3.9+ required. Install with:  python -m pip install -r requirements.txt
